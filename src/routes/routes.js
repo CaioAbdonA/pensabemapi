@@ -11,6 +11,7 @@ routes.get('/funcionarios', funcionarioController.index);
 
 routes.get('/funcionarios/:nome', funcionarioController.details); 
 
+routes.get('/funcionariosN/:nome', funcionarioController.pesquisaTag);
 //rotas vereadores e funcionarios da camara
 routes.post('/fcamara', vereadoresController.insert);
 
