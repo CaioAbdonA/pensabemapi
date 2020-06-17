@@ -9,7 +9,7 @@ routes.post('/funcionarios', funcionarioController.insert);
 
 routes.get('/funcionarios', funcionarioController.index);
 
-routes.get('/funcionarios/:id', funcionarioController.details);
+routes.get('/funcionarios/:nome', funcionarioController.details); 
 
 //rotas vereadores e funcionarios da camara
 routes.post('/fcamara', vereadoresController.insert);

@@ -14,8 +14,8 @@ module.exports = {
         return res.json(funcionarios);
     },
     async details (req, res){
-        const funcionarios = await Funcionario.findById(req.params.id);
-
+        const nome = req.params.nome;
+        const funcionarios = await Funcionario.findOne({nome}, function (err, item){ });
         return res.json(funcionarios);
     }
 }
